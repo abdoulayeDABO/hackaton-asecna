@@ -1,0 +1,6 @@
+ATSA / INNOVATION DAYS 2026 — JEU DE DONNEES FICTIVES
+Aérodromes, pistes, espaces aériens et aides radio fictifs ; XML simplifié inspiré des concepts AIXM et catalogue API de démonstration.
+
+CAS DE TEST : Changements en attente/rejetés à ne pas publier comme valides ; vérifier provenance et statut.
+
+Toutes les données sont générées artificiellement. Aucun lien avec les bases de production ASECNA. Ne pas utiliser pour la navigation, la sécurité, le recrutement réel ou la maintenance réelle.

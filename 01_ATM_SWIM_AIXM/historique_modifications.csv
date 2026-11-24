@@ -1,0 +1,4 @@
+﻿change_id,objet,champ,ancienne_valeur,nouvelle_valeur,date_effet,validation
+CHG-001,RWY-001,longueur_m,3000,3100,2026-12-03,VALIDEE
+CHG-002,ASP-002,limite_superieure,3000 FT AMSL,3500 FT AMSL,2026-12-31,EN_ATTENTE
+CHG-003,NAV-002,frequence,340 kHz,345 kHz,2027-01-28,REJETEE

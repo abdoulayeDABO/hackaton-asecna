@@ -1,0 +1,13 @@
+{
+  "id": "urn:atsa:demo:aero:2026",
+  "titre": "Service de consultation de données aéronautiques synthétiques",
+  "version": "1.0",
+  "format": "CSV/XML simplifié",
+  "api_suggeree": {
+    "GET /aerodromes": "liste",
+    "GET /aerodromes/{code}": "détail",
+    "GET /espaces-aeriens": "liste",
+    "GET /recherche?q=": "recherche textuelle"
+  },
+  "avertissement": "Ce fichier XML est une représentation simplifiée inspirée des concepts AIXM. Il ne constitue pas un encodage AIXM 5.1 conforme ni un service SWIM certifié."
+}
