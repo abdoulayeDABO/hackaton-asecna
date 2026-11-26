@@ -36,7 +36,7 @@ hackaton-asecna/
 ├── pretraitement/         # script Python + rapport de validation
 ├── agent/                 # System prompt + description de l’escalade
 ├── api/                   # documentation des outils
-├── evaluation/            # 18 questions officielles + résultats
+├── evaluation/            # 18 questions officielles, recette et résultats
 └── docs/                  # PDF et schéma d’architecture
 ```
 
@@ -65,7 +65,7 @@ hackaton-asecna/
 
 ## Résultats
 
-Les questions officielles, les questions adversariales et la méthode d’évaluation sont dans [`evaluation/`](evaluation/). Les résultats ne sont pas encore mesurés : `evaluation/resultats.csv` est vide tant qu’aucun run n’a été exécuté.
+Les questions officielles, les questions adversariales, les questions de recette et la méthode d’évaluation sont dans [`evaluation/`](evaluation/). Un run partiel de 5 tests (nuit du 24 au 25 novembre 2026) est consigné : 5 tests réussis sur 5, soit 100 % sur ce run partiel. Les 18 questions officielles ne sont pas encore toutes mesurées. Voir [`evaluation/questions_recette.csv`](evaluation/questions_recette.csv), [`evaluation/bilan_tests_2026-11-24.md`](evaluation/bilan_tests_2026-11-24.md) et [`evaluation/resultats.csv`](evaluation/resultats.csv).
 
 ## Garde-fous
 

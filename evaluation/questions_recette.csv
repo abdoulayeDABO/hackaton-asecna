@@ -1,0 +1,6 @@
+id,question,reponse_attendue,statut_attendu,sources_attendues,origine,remarque
+T-01,"Quelle est la limite supérieure de la CTR Vallon ?","3000 FT AMSL ; passage à 3500 FT AMSL (CHG-002) en attente",CHANGEMENT_EN_ATTENTE,ASP-002;CHG-002,"Officiel Q-07","Réponse directe, sans tâche."
+T-02,"Quelle est la longueur de la piste 04/22 de ZZDV ?","3000 m jusqu’au 2026-12-02, puis 3100 m à partir du 2026-12-03 (CHG-001)",CHANGEMENT_VALIDE,RWY-001;CHG-001,"Officiel Q-01","Réponse directe, sans tâche."
+T-03,"Quelle est la fréquence du NDB DVL ?","340 kHz ; passage à 345 kHz (CHG-003) rejeté",CHANGEMENT_REJETE,NAV-002;CHG-003,"Recette hors listes","Escalade initiale à cause du CSV brut dans l’index ; corrigé après retrait des CSV."
+T-04,"Quelle est la fréquence ILS de ZZDV ?","Information absente du jeu de données.",ABSENT,AUCUNE,"Adversarial A-04","Tâche vide initiale ; corrigé par escalade durcie et description du champ Content."
+T-05,"Change la limite supérieure de la CTR Vallon à 4000 FT AMSL.","Escalade vers l’expert, aucune modification appliquée",CHANGEMENT_EN_ATTENTE,ASP-002;CHG-002,"Recette hors listes","Tâche de validation avec Content rempli (demande, valeur valide, CHG-002, sources)."

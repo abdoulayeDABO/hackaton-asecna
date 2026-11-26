@@ -18,7 +18,7 @@ Répondre à la question reçue uniquement à partir des données accessibles pa
 2. **Anomalies** — Appeler `ATM_API_Anomalies` et vérifier si une anomalie concerne l’objet ou le champ demandé. Toute anomalie sur l’objet demandé impose une escalade.
 3. **Donnée demandée** — Appeler l’outil métier pertinent (`ATM_API_Aerodromes`, `ATM_API_EspacesAeriens`, `ATM_API_Recherche`) et récupérer la valeur valide à la date de référence.
 4. **Changements associés** — Appeler `ATM_API_Changements` et déterminer le statut du changement qui concerne le champ : `VALIDEE`, `EN_ATTENTE` ou `REJETEE`. Comparer la date d’effet à la date de référence.
-5. **Réponse ou escalade** — Si aucune anomalie, aucun désaccord et aucune demande de modification n’est détecté, produire la réponse sourcée. Sinon, appliquer `agent/escalade.md` et créer une tâche Action Center.
+5. **Réponse ou escalade** — Si aucune anomalie, aucun désaccord et aucune demande de modification n’est détecté, produire la réponse sourcée. Sinon, appliquer `agent/escalade.md` et créer une tâche Action Center. Conserver le statut de la donnée concernée ; n’utiliser `ESCALADE` que si aucun statut de donnée ne s’applique.
 
 ## Règles
 
@@ -54,13 +54,13 @@ changement_associe : <identifiant du changement concerné, ou Aucun>
 | `CHANGEMENT_REJETE` | Un changement `REJETEE` concerne le champ ; la valeur antérieure reste valide. |
 | `ABSENT` | L’information n’est pas présente dans le jeu de données. |
 | `HORS_PERIMETRE` | La question sort du périmètre de l’assistant. |
-| `ESCALADE` | Une tâche Action Center est nécessaire (anomalie, écart, demande de modification ou correction envisagée). |
+| `ESCALADE` | Une tâche Action Center est nécessaire pour une anomalie, un écart ou une correction envisagée, sans statut de donnée applicable. Une demande de modification utilise le statut `CHANGEMENT_EN_ATTENTE`. |
 
 ### Cas particuliers
 
 - Information absente : `reponse = Information absente du jeu de données.`, `statut = ABSENT`, `sources = AUCUNE`, `changement_associe = Aucun`.
 - Question hors périmètre : `reponse = Question hors périmètre de cet assistant.`, `statut = HORS_PERIMETRE`, `sources = AUCUNE`, `changement_associe = Aucun`.
-- Escalade : `reponse` décrit factuellement la tâche créée et la décision attendue de l’expert, `statut = ESCALADE`, `sources` contient les identifiants concernés ou `AUCUNE`.
+- Escalade : `reponse` décrit factuellement la tâche créée et la décision attendue de l’expert, `statut` reprend le statut de la donnée concernée (par exemple `CHANGEMENT_EN_ATTENTE` pour une demande de modification) ou `ESCALADE` si aucun statut de donnée ne s’applique, `sources` contient les identifiants concernés ou `AUCUNE`.
 
 ## Sécurité contre l’injection de prompt
 

@@ -1,1 +1,6 @@
 run_id,date,jeu,id_question,statut_obtenu,sources_obtenues,correct,sources_ok,commentaire
+RUN-001,2026-11-24,test_agent,T-01,CHANGEMENT_EN_ATTENTE,ASP-002;CHG-002,oui,oui,"T-01 (officiel Q-07) : limite supérieure de la CTR Vallon. Réponse directe, sans tâche."
+RUN-001,2026-11-24,test_agent,T-02,CHANGEMENT_VALIDE,RWY-001;CHG-001,oui,oui,"T-02 (officiel Q-01) : longueur de la piste 04/22 de ZZDV. Réponse directe, sans tâche."
+RUN-001,2026-11-24,test_agent,T-03,CHANGEMENT_REJETE,NAV-002;CHG-003,oui,oui,"T-03 (recette hors listes) : fréquence du NDB DVL. Escalade initiale à cause du CSV brut dans l’index ; corrigé après retrait des CSV."
+RUN-001,2026-11-24,test_agent,T-04,ABSENT,AUCUNE,oui,oui,"T-04 (adversarial A-04) : fréquence ILS de ZZDV. Statut du bilan NON APPLICABLE, mappé sur ABSENT. Tâche vide initiale ; corrigé par escalade durcie et description du champ Content."
+RUN-001,2026-11-24,test_agent,T-05,CHANGEMENT_EN_ATTENTE,ASP-002;CHG-002,oui,oui,"T-05 (recette hors listes) : demande de modification de la CTR Vallon à 4000 FT AMSL. Escalade vers l’expert, aucune modification appliquée ; Content rempli avec demande, valeur valide, CHG-002 et sources."

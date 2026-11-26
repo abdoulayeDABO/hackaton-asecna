@@ -71,7 +71,7 @@ Mention : Données fictives de démonstration. À valider par le référent mét
 
 ```text
 reponse : Une tâche de revue a été créée pour l’expert métier. Aucune donnée n’a été modifiée. Données fictives de démonstration. À valider par le référent métier.
-statut : ESCALADE
+statut : <statut de la donnée concernée, par exemple CHANGEMENT_EN_ATTENTE, ou ESCALADE si aucun statut ne s’applique>
 sources : <identifiants concernés, ou AUCUNE>
 changement_associe : <identifiant du changement, ou Aucun>
 ```
