@@ -1,0 +1,3 @@
+id,code,nom,pays,latitude,longitude,elevation_ft,statut,changement_associe
+AD-001,ZZDV,AERODROME FICTIF DAKAR-VALLON,SENEGAL,14.69,-17.12,92,FICTIF,Aucun
+AD-002,ZZSL,AERODROME FICTIF SAINT-LOUIS-EST,SENEGAL,16.08,-16.23,26,FICTIF,Aucun

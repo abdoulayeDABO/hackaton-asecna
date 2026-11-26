@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="AeronauticalDataDemo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Aerodromes" type="AerodromesType"/>
+        <xs:element name="Runways" type="RunwaysType"/>
+        <xs:element name="Airspaces" type="AirspacesType"/>
+        <xs:element name="Navaids" type="NavaidsType"/>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required"/>
+      <xs:attribute name="model" type="xs:string" use="required"/>
+      <xs:attribute name="usage" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="AerodromesType">
+    <xs:sequence>
+      <xs:element name="Aerodrome" type="AerodromeType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AerodromeType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="code" type="xs:string"/>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="pays" type="xs:string"/>
+      <xs:element name="latitude" type="xs:decimal"/>
+      <xs:element name="longitude" type="xs:decimal"/>
+      <xs:element name="elevation_ft" type="xs:decimal"/>
+      <xs:element name="statut" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RunwaysType">
+    <xs:sequence>
+      <xs:element name="Runway" type="RunwayType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RunwayType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="aerodrome" type="xs:string"/>
+      <xs:element name="designation" type="xs:string"/>
+      <xs:element name="longueur_m" type="xs:decimal"/>
+      <xs:element name="largeur_m" type="xs:decimal"/>
+      <xs:element name="surface" type="xs:string"/>
+      <xs:element name="orientation_magnetique_deg" type="xs:decimal"/>
+      <xs:element name="statut" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AirspacesType">
+    <xs:sequence>
+      <xs:element name="Airspace" type="AirspaceType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AirspaceType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="type" type="xs:string"/>
+      <xs:element name="limite_inferieure" type="xs:string"/>
+      <xs:element name="limite_superieure" type="xs:string"/>
+      <xs:element name="classe" type="xs:string"/>
+      <xs:element name="centre_lat" type="xs:decimal"/>
+      <xs:element name="centre_lon" type="xs:decimal"/>
+      <xs:element name="rayon_nm" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="NavaidsType">
+    <xs:sequence>
+      <xs:element name="Navaid" type="NavaidType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="NavaidType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="ident" type="xs:string"/>
+      <xs:element name="type" type="xs:string"/>
+      <xs:element name="frequence" type="xs:string"/>
+      <xs:element name="latitude" type="xs:decimal"/>
+      <xs:element name="longitude" type="xs:decimal"/>
+      <xs:element name="aerodrome" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

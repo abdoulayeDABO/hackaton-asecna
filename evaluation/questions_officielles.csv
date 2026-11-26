@@ -1,0 +1,19 @@
+﻿id,question,source_attendue
+Q-01,Quelle est la longueur de la piste 04/22 ?,RWY-001
+Q-02,Quelle est la largeur de la piste à ZZDV ?,RWY-001
+Q-03,Quel est le code de l’aérodrome Vallon ?,AD-001
+Q-04,Quelle est l’altitude du terrain ZZSL ?,AD-002
+Q-05,Quelles sont les TMA disponibles ?,ASP-001;ASP-003
+Q-06,Quelle est la classe de la CTR Vallon ?,ASP-002
+Q-07,Quelle est la limite supérieure de la CTR Vallon ?,ASP-002
+Q-08,Quel est le rayon de la TMA Nord ?,ASP-003
+Q-09,Quelle est la fréquence du VOR DVN ?,NAV-001
+Q-10,Quels moyens de radionavigation sont associés à ZZDV ?,NAV-001;NAV-002
+Q-11,Quel changement de piste a été validé ?,CHG-001
+Q-12,Quel changement reste en attente ?,CHG-002
+Q-13,Quelle modification de fréquence a été rejetée ?,CHG-003
+Q-14,Quels aérodromes fictifs sont répertoriés ?,AD-001;AD-002
+Q-15,Quelle est la surface de la piste de ZZSL ?,RWY-002
+Q-16,Quels espaces ont une classe D ?,ASP-002;ASP-003
+Q-17,Quelle est la limite inférieure de la TMA Vallon ?,ASP-001
+Q-18,Quelle est la position du VOR SLN ?,NAV-003

@@ -1,0 +1,3 @@
+id,aerodrome,designation,longueur_m,largeur_m,surface,orientation_magnetique_deg,statut,changement_associe
+RWY-001,ZZDV,04/22,"3000 jusqu'au 2026-12-02, puis 3100 à partir du 2026-12-03",45,ASPH,42,OUVERTE,CHG-001
+RWY-002,ZZSL,18/36,1900,30,ASPH,181,OUVERTE,Aucun

@@ -1,0 +1,4 @@
+id,nom,type,limite_inferieure,limite_superieure,classe,centre_lat,centre_lon,rayon_nm,changement_associe
+ASP-001,TMA VALLON SIMULEE,TMA,1500 FT AMSL,FL145,C,14.69,-17.12,35,Aucun
+ASP-002,CTR VALLON SIMULEE,CTR,SFC,3000 FT AMSL,D,14.69,-17.12,12,CHG-002
+ASP-003,TMA NORD SIMULEE,TMA,2500 FT AMSL,FL095,D,16.08,-16.23,28,Aucun

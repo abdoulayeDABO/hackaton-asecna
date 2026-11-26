@@ -1,0 +1,4 @@
+id,ident,type,frequence,latitude,longitude,aerodrome,changement_associe
+NAV-001,DVN,VOR/DME,114.30 MHz,14.72,-17.1,ZZDV,Aucun
+NAV-002,DVL,NDB,340 kHz,14.64,-17.18,ZZDV,CHG-003
+NAV-003,SLN,VOR/DME,112.10 MHz,16.11,-16.25,ZZSL,Aucun
